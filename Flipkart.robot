@@ -45,6 +45,15 @@ Adding to Cart(Scenario 2)
     click element   xpath://button[text()='ADD TO CART']
     sleep   3s
     Capture Page Screenshot  Added Cart.png
+    
+    close browser        #verifying cart
+    Open Browser  https://www.flipkart.com/  gc
+    Maximize Browser Window
+    Capture Page Screenshot cart added page.png
+    
+    sleep  3s
+    Click Element   xpath://span[text()='Cart']
+    Capture Page Screenshot cart.png
 
 
 
