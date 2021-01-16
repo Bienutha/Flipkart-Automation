@@ -49,6 +49,10 @@ Adding to Cart(Scenario 2)
     close browser        #verifying cart
     Open Browser  https://www.flipkart.com/  gc
     Maximize Browser Window
+    
+    Press Keys  xpath=//*[contains(text(),'Enter Email/Mobile number')]  8519954075
+    Press Keys  xpath=//*[contains(text(),'Enter Password')]  Flip@Kart
+    Click Element  xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button
     Capture Page Screenshot cart added page.png
     
     sleep  3s
