@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20210117 01:28:34.078" rpa="false">
+<suite id="s1" name="Flipkart" source="C:\Users\Preethi\Flipkart\Flipkart.robot">
+<test id="s1-t1" name="Open Flipkart from the browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.flipkart.com/</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20210117 01:28:34.429" level="INFO">Opening browser 'gc' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20210117 01:28:34.429" endtime="20210117 01:28:40.723"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210117 01:28:40.726" endtime="20210117 01:28:42.901"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>Title page.png</arg>
+</arguments>
+<msg timestamp="20210117 01:28:43.725" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Title%20page.png"&gt;&lt;img src="Title%20page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:28:42.915" endtime="20210117 01:28:43.725"></status>
+</kw>
+<tags>
+<tag>Flip</tag>
+</tags>
+<status status="PASS" starttime="20210117 01:28:34.429" endtime="20210117 01:28:43.726" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Login to flipkart">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(),'Enter Email/Mobile number')]</arg>
+<arg>8519954075</arg>
+</arguments>
+<msg timestamp="20210117 01:28:43.734" level="INFO">Sending key(s) ('8519954075',) to xpath=//*[contains(text(),'Enter Email/Mobile number')] element.</msg>
+<msg timestamp="20210117 01:28:44.040" level="INFO">Sending keys 8519954075</msg>
+<status status="PASS" starttime="20210117 01:28:43.734" endtime="20210117 01:28:44.095"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(),'Enter Password')]</arg>
+<arg>Flip@Kart</arg>
+</arguments>
+<msg timestamp="20210117 01:28:44.100" level="INFO">Sending key(s) ('Flip@Kart',) to xpath=//*[contains(text(),'Enter Password')] element.</msg>
+<msg timestamp="20210117 01:28:44.413" level="INFO">Sending keys Flip@Kart</msg>
+<status status="PASS" starttime="20210117 01:28:44.100" endtime="20210117 01:28:44.463"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button</arg>
+</arguments>
+<msg timestamp="20210117 01:28:44.465" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20210117 01:28:44.465" endtime="20210117 01:28:44.532"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>Login page.png</arg>
+</arguments>
+<msg timestamp="20210117 01:28:45.696" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Login%20page.png"&gt;&lt;img src="Login%20page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:28:44.534" endtime="20210117 01:28:45.696"></status>
+</kw>
+<status status="PASS" starttime="20210117 01:28:43.734" endtime="20210117 01:28:45.698" critical="yes"></status>
+</test>
+<test id="s1-t3" name="View Cart">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:28:48.720" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:28:45.713" endtime="20210117 01:28:48.720"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://span[text()='Cart']</arg>
+</arguments>
+<msg timestamp="20210117 01:28:48.723" level="INFO">Clicking element 'xpath://span[text()='Cart']'.</msg>
+<status status="PASS" starttime="20210117 01:28:48.722" endtime="20210117 01:28:48.842"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:28:51.855" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:28:48.843" endtime="20210117 01:28:51.855"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>Empty cart.png</arg>
+</arguments>
+<msg timestamp="20210117 01:28:52.193" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Empty%20cart.png"&gt;&lt;img src="Empty%20cart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:28:51.857" endtime="20210117 01:28:52.193"></status>
+</kw>
+<status status="PASS" starttime="20210117 01:28:45.713" endtime="20210117 01:28:52.194" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Shop Now">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://span[text()='Shop now']</arg>
+</arguments>
+<msg timestamp="20210117 01:28:52.205" level="INFO">Clicking element 'xpath://span[text()='Shop now']'.</msg>
+<status status="PASS" starttime="20210117 01:28:52.205" endtime="20210117 01:28:52.310"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:28:55.317" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:28:52.312" endtime="20210117 01:28:55.318"></status>
+</kw>
+<status status="PASS" starttime="20210117 01:28:52.201" endtime="20210117 01:28:55.319" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Select Electronics Product(Scenario 1)">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@class='_1kidPb']//span</arg>
+</arguments>
+<msg timestamp="20210117 01:28:55.348" level="INFO">Clicking element 'xpath://div[@class='_1kidPb']//span'.</msg>
+<status status="PASS" starttime="20210117 01:28:55.348" endtime="20210117 01:28:55.417"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:28:58.422" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:28:55.418" endtime="20210117 01:28:58.422"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>Category.png</arg>
+</arguments>
+<msg timestamp="20210117 01:28:58.835" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Category.png"&gt;&lt;img src="Category.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:28:58.423" endtime="20210117 01:28:58.835"></status>
+</kw>
+<status status="PASS" starttime="20210117 01:28:55.348" endtime="20210117 01:28:58.850" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Select Mobile Holder under mobile Accessories">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[contains(text(),'Mobile Holders')]</arg>
+</arguments>
+<msg timestamp="20210117 01:28:58.862" level="INFO">Clicking element 'xpath://*[contains(text(),'Mobile Holders')]'.</msg>
+<status status="PASS" starttime="20210117 01:28:58.862" endtime="20210117 01:28:58.964"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:29:01.968" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:28:58.966" endtime="20210117 01:29:01.968"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>Sub Category.png</arg>
+</arguments>
+<msg timestamp="20210117 01:29:02.462" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Sub%20Category.png"&gt;&lt;img src="Sub%20Category.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:29:01.969" endtime="20210117 01:29:02.462"></status>
+</kw>
+<status status="PASS" starttime="20210117 01:28:58.862" endtime="20210117 01:29:02.464" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Selecting the Mobile Holders">
+<kw name="Click Image" library="SeleniumLibrary">
+<doc>Clicks an image identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="container"]/div/div[3]/div[2]/div[1]/div[2]/div[2]/div/div[3]/div/a[1]/div[1]/div/div/img</arg>
+</arguments>
+<msg timestamp="20210117 01:29:02.474" level="INFO">Clicking image 'xpath://*[@id="container"]/div/div[3]/div[2]/div[1]/div[2]/div[2]/div/div[3]/div/a[1]/div[1]/div/div/img'.</msg>
+<status status="PASS" starttime="20210117 01:29:02.474" endtime="20210117 01:29:02.639"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:29:05.644" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:29:02.641" endtime="20210117 01:29:05.644"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>title=Portronics POR-122 MODESK Universal Mobile Holder (Black) Mobile Holder Price in India - Buy Portronics POR-122 MODESK Universal Mobile Holder (Black) Mobile Holder online at Flipkart.com</arg>
+</arguments>
+<status status="PASS" starttime="20210117 01:29:05.646" endtime="20210117 01:29:07.855"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:29:10.864" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:29:07.858" endtime="20210117 01:29:10.864"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>Product Details.png</arg>
+</arguments>
+<msg timestamp="20210117 01:29:11.265" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Product%20Details.png"&gt;&lt;img src="Product%20Details.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:29:10.866" endtime="20210117 01:29:11.265"></status>
+</kw>
+<status status="PASS" starttime="20210117 01:29:02.474" endtime="20210117 01:29:11.273" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Adding to Cart(Scenario 2)">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://button[text()='ADD TO CART']</arg>
+</arguments>
+<msg timestamp="20210117 01:29:11.298" level="INFO">Clicking element 'xpath://button[text()='ADD TO CART']'.</msg>
+<status status="PASS" starttime="20210117 01:29:11.298" endtime="20210117 01:29:11.388"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:29:14.401" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:29:11.389" endtime="20210117 01:29:14.401"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>Added Cart.png</arg>
+</arguments>
+<msg timestamp="20210117 01:29:14.761" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Added%20Cart.png"&gt;&lt;img src="Added%20Cart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:29:14.403" endtime="20210117 01:29:14.761"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210117 01:29:14.761" endtime="20210117 01:29:17.194"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.flipkart.com/</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20210117 01:29:17.195" level="INFO">Opening browser 'gc' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20210117 01:29:17.195" endtime="20210117 01:29:23.120"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210117 01:29:23.121" endtime="20210117 01:29:25.273"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(),'Enter Email/Mobile number')]</arg>
+<arg>8519954075</arg>
+</arguments>
+<msg timestamp="20210117 01:29:25.276" level="INFO">Sending key(s) ('8519954075',) to xpath=//*[contains(text(),'Enter Email/Mobile number')] element.</msg>
+<msg timestamp="20210117 01:29:25.616" level="INFO">Sending keys 8519954075</msg>
+<status status="PASS" starttime="20210117 01:29:25.276" endtime="20210117 01:29:25.674"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(),'Enter Password')]</arg>
+<arg>Flip@Kart</arg>
+</arguments>
+<msg timestamp="20210117 01:29:25.676" level="INFO">Sending key(s) ('Flip@Kart',) to xpath=//*[contains(text(),'Enter Password')] element.</msg>
+<msg timestamp="20210117 01:29:25.989" level="INFO">Sending keys Flip@Kart</msg>
+<status status="PASS" starttime="20210117 01:29:25.676" endtime="20210117 01:29:26.033"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button</arg>
+</arguments>
+<msg timestamp="20210117 01:29:26.035" level="INFO">Clicking element 'xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20210117 01:29:26.035" endtime="20210117 01:29:26.103"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:29:29.112" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:29:26.105" endtime="20210117 01:29:29.112"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>cart added page.png</arg>
+</arguments>
+<msg timestamp="20210117 01:29:29.667" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="cart%20added%20page.png"&gt;&lt;img src="cart%20added%20page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:29:29.113" endtime="20210117 01:29:29.668"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:29:32.693" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:29:29.672" endtime="20210117 01:29:32.694"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://span[text()='Cart']</arg>
+</arguments>
+<msg timestamp="20210117 01:29:32.695" level="INFO">Clicking element 'xpath://span[text()='Cart']'.</msg>
+<status status="PASS" starttime="20210117 01:29:32.695" endtime="20210117 01:29:32.768"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210117 01:29:35.781" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210117 01:29:32.768" endtime="20210117 01:29:35.781"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>cart.png</arg>
+</arguments>
+<msg timestamp="20210117 01:29:36.120" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="cart.png"&gt;&lt;img src="cart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210117 01:29:35.783" endtime="20210117 01:29:36.120"></status>
+</kw>
+<status status="PASS" starttime="20210117 01:29:11.296" endtime="20210117 01:29:36.124" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210117 01:28:34.080" endtime="20210117 01:29:36.137"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0">Critical Tests</stat>
+<stat pass="8" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Flip</stat>
+</tag>
+<suite>
+<stat pass="8" fail="0" id="s1" name="Flipkart">Flipkart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
